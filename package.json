@@ -1,0 +1,33 @@
+{
+  "name": "solremote",
+  "bin": {
+    "solremote": "dist/index.js"
+  },
+  "version": "1.0.0",
+  "description": "A Cli took for generating random Keypairs, checking balance, requesting airdrop and sending sol",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w",
+    "link-cli": "yarn --global unlink solcli && chmod +x ./dist/index.js && yarn --global link",
+    "build": "tsc",
+    "ci": "pnpm run build",
+    "release": "pnpm run ci && changeset publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.7",
+    "@solana/web3.js": "^1.95.1",
+    "bs58": "^5.0.0",
+    "commander": "^12.1.0",
+    "crypto": "^1.0.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
