@@ -8,7 +8,8 @@ SolRemote is a command-line interface (CLI) tool designed to interact with the S
 ### Installation
 
 ```bash
-$ npm install -g solremote
+$ pnpm install
+$ pnpm dev
 ```
 ## General Usage
 

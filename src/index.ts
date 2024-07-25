@@ -36,7 +36,7 @@ program
 .description("balance")
 .action(balance)
 
-
+// transfer
 program
   .command("transfer <file> <to-publickey> <amount>")
   .description("Transfer SOL from a keypair stored in a file to another public key")

@@ -1,4 +1,6 @@
 import { Connection, clusterApiUrl, PublicKey, LAMPORTS_PER_SOL } from "@solana/web3.js";
+import path from 'path';
+const defaultDirectory = path.join(__dirname, 'keypairs');
 
 export default async function airdrop(publicKey: any, amount: any) {
     const connection = new Connection(clusterApiUrl("devnet"));
